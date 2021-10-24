@@ -220,14 +220,14 @@
 }
 
 .stateArt{
-    margin: 10rem 0;
+    margin: 14rem 0;
     padding: 0 5rem;
     background-image: url(/images/bg-pattern-circles.svg);
     background-color: var(--veryDarkGrayBlue);
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: left 70%;
-    height: 60vh;
+    height: 50vh;
     border-radius: 0 6rem;
 }
 
@@ -235,6 +235,16 @@
     padding: 0 2rem;
     color: var(--white);
     font-family: var(--fontUbuntu);
+}
+
+@media only screen and (max-width: 750px) {
+    .stateArt{
+        height: auto;
+        background-position: 10%;
+        background-size: 100%;
+        text-align: center;
+        padding: 0 2rem 3rem;
+    }
 }
 
 .state-info{
