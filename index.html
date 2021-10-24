@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tailwind.css">
+  <script src="index.js" defer></script>
+  <title>Frontend Mentor | [Blogr]</title>
+  
+</head>
+<body>
+  <header class="header">
+    <nav class="flex justify-between items-center">
+      <div class="flex">
+        <img src="/images/logo.svg" alt="logo" class="mr-12">
+
+        <ul class="nav-items items-center hidden md:flex">
+          <li class="dropdown-menu">
+            <a href="#" class="flex items-center nav-link"> 
+              <span class="mr-2">Product</span> 
+              <img src="/images/icon-arrow-light.svg" alt="" class="menu-icon">
+            </a>
+           
+            <div class="dropdown">
+              <ul>
+                <li>Overview</li>
+                <li>Pricing</li>
+                <li>Marketplace</li>
+                <li>Features</li>
+                <li>Integrations</li>
+              </ul>
+            </div>
+  
+          </li>
+  
+          <li class="dropdown-menu">
+            <a href="#" class="flex items-center nav-link"> 
+              <span class="mr-2">Company</span> 
+              <img src="/images/icon-arrow-light.svg" alt="" class="menu-icon">
+            </a>
+           
+            <div class="dropdown">
+              <ul>
+                <li>About</li>
+                <li>Team</li>
+                <li>Blog</li>
+                <li>Careers</li>
+              </ul>
+            </div>
+  
+          </li>
+  
+          <li class="dropdown-menu">
+            <button href="#" class="flex items-center nav-link"> 
+              <span class="mr-2">Connect</span> 
+              <img src="/images/icon-arrow-light.svg" alt="" class="menu-icon">
+            </button>
+           
+            <div class="dropdown">
+              <ul>
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>LinkedIn</li>
+              </ul>
+            </div>
+  
+          </li>
+        </ul>
+      </div>
+          <div class="cta-btn hidden md:block">
+            <button class="cta-btn1 mr-8">Login</button>
+            <button class="cta-btn2">Sign Up</button>
+          </div>
+          <button id="nav-btn">
+            <img src="/images/icon-hamburger.svg" class="block md:hidden" id="navIcon">
+            <img src="/images/icon-close.svg" class="hidden" id="closeIcon">
+          </button>
+    </nav>
+
+    <div class="mobile-nav">
+      <ul class="mobile-nav-link">
+        <li class="dropdown-menu">
+          <a href="#" class="flex justify-center items-center mobile-link"> 
+            <span class="mr-2">Product</span> 
+            <img src="/images/icon-arrow-dark.svg" alt="" class="mobile-nav-icon">
+          </a>
+         
+          <div class="dropdown flex flex-col justify-center items-center">
+            <ul>
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integrations</li>
+            </ul>
+          </div>
+
+        </li>
+
+        <li class="dropdown-menu">
+          <a href="#" class="flex justify-center items-center mobile-link"> 
+            <span class="mr-2">Company</span> 
+            <img src="/images/icon-arrow-dark.svg" alt="" class="mobile-nav-icon">
+          </a>
+         
+          <div class="dropdown flex flex-col justify-center items-center">
+            <ul>
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+
+        </li>
+
+        <li class="dropdown-menu">
+          <a href="#" class="flex justify-center items-center mobile-link"> 
+            <span class="mr-2">Connect</span> 
+            <img src="/images/icon-arrow-dark.svg" alt="" class="mobile-nav-icon">
+          </a>
+         
+          <div class="dropdown flex flex-col justify-center items-center">
+            <ul>
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+            </ul>
+          </div>
+
+        </li>
+      </ul>
+      <div class="cta-btn flex flex-col mt-8 items-center justify-center">
+        <button class="mobile-cta-btn1">Login</button>
+        <button class="cta-btn2">Sign Up</button>
+      </div>
+    </div>
+
+    <div class="header-hero flex flex-col items-center justify-center py-32 text-center">
+      <p class="header1 text-4xl md:text-6xl">A modern publishing platform</p>
+      <p class="header-text mt-8 mb-12">Grow your audience and build your online brand</p>
+      <div class="btns">
+        <button class="cta-btn2 mr-4">Start for Free</button>
+        <button class="cta-btn3">Learn More</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="designed">
+    <p class="designed-title text-center text-3xl" >Designed for the future</p>
+    <div class="flex flex-col-reverse md:flex-row justify-between items-center designed-text">
+      <div class="text-center md:text-left mx-20 w-auto md:w-2/4">
+        <p class="designed-title text-2xl">
+          Introducing an extensible editor
+        </p>
+        <p class="text2">
+          Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+          change the looks of a blog.
+        </p>
+        <p class="designed-title text-2xl">
+          Robust content management
+        </p>
+        <p class="text2">
+          Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+        </p>
+      </div>
+      <div class="w-2/4 designed-image hidden md:block">
+        <img src="/images/illustration-editor-desktop.svg" alt="editor" class="design-img ">
+      </div>
+      <div class="designed-mobile-image mt-20 block md:hidden">
+        <img src="/images/illustration-editor-mobile.svg" alt="editor" class="design-img  w-full">
+      </div>
+    </div>
+  </div>
+
+  <div class="stateArt flex justify-around items-center">
+    <img src="/images/illustration-phones.svg" alt="">
+    <div class="state-text">
+      <p class="state-title text-3xl mb-6">State of the Art Infrastructure</p>
+      <p class="state-info">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+    </div>
+  </div>
+
+  <div class="free">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+      
+      <div class="laptop-image left-0 md:-left-40">
+          <img src="/images/illustration-laptop-desktop.svg" alt="image-laptop" class="laptop-img hidden md:block">
+          <img src="/images/illustration-laptop-mobile.svg" alt="image-laptop" class="mobile-img block md:hidden w-96 mx-auto">
+      </div>
+
+      <div class=" text-center md:text-left mx-20 md:mr-32 free-text">
+        <p class="designed-title text-2xl">
+          Free, open, simple
+        </p>
+        <p class="text2">
+          Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+          features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+          and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+        </p>
+        <p class="designed-title text-2xl">
+          Powerful tooling
+        </p>
+        <p class="text2">
+          Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+          capable of producing even the most complicated sites.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="flex items-center sm:items-stretch text-center sm:text-left sm:justify-around mb-12 flex-col sm:flex-row">
+      <div class="footer-logo">
+        <img src="/images/logo.svg" alt="Logo image">
+      </div>
+      <div class="product mt-12 sm:mt-0">
+        <p class="footer-title mb-6">Product</p>
+        <ul>
+          <li>Overview</li>
+          <li>Pricing</li>
+          <li>Marketplace</li>
+          <li>Features</li>
+          <li>Integrations</li>
+        </ul>
+      </div>
+
+      <div class="company mt-8 sm:mt-0">
+        <p class="footer-title mb-6">Company</p>
+        <ul>
+          <li>About</li>
+          <li>Team</li>
+          <li>Blog</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+
+      <div class="connect mt-8 sm:mt-0">
+        <p class="footer-title mb-6">Connect</p>
+        <ul>
+          <li>Contact</li>
+          <li>Newsletter</li>
+          <li>LinkedIn</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Dooney</a>.
+    </div>
+  </footer>
+</body>
+</html>
